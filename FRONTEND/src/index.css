@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* Global styles */
+html,
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+/* Smooth rendering */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Buttons */
+button {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Inputs */
+input {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Fade-in animation (used for result & errors) */
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
